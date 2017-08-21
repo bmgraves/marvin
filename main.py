@@ -15,6 +15,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    butt_count = 0
     # First we make sure the bot isn't seeing its own messages, this prevents infinite loops.
     sane_response = client.user.id != message.author.id
     msg = message.content
@@ -22,7 +23,8 @@ async def on_message(message):
     if sane_response and ("your face" in msg.lower()):
         await client.send_message(message.channel, chatty.face_joke(message))
     elif sane_response and ("butt" in msg.lower()):
-        await client.send_message(message.channel, chatty.butt_joke(message))
+        butt_count +=1
+        await client.send_message(message.channel, chatty.butt_joke(message, butt_count))
     elif sane_response and (msg.startswith("?test")):
         await client.send_message(message.channel, chatty.test_joke(message))
     elif sane_response and (msg.startswith("?help")):

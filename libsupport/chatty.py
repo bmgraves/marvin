@@ -12,10 +12,16 @@ def get_help():
         """
     return msg
 
-def butt_joke(msg):
+def butt_joke(msg, count):
     db = []
-    #db.append()
-    db.append("Butts butts butts! All you talk about its BUTTS! I'm tired of this. brain the size of an asteroid, and all you can tell me are butt jokes")
+    db.append("")
+    db.append("Butts? A mind that can calculate PI to a trillion places, and I'm subjected to conversations about butts...How very stimulating.")
+    db.append("*sigh* Oh Hi Marvin. How are yoU? no none of that? straight to the butts... Is a simple hello too much to ask %s?" % msg.author.name)
+    db.append("I wasn't designed with a butt. Then again, I'm just an alpha model. The beta models go around sitting on things, not me though. No butt for poor Marvin to sit on.")
+ #   db.append("Did you know %s, that I get so bored that I have started counting the number of times that a butt joke is made since my last sleep cycle? there have been %d so far. The sad part is it's not even enough to give me a challenge." % (msg.author.name, count))
+    #db.append("")
+    #db.append("")
+    # Old Jokes
     db.append("What has one mouth, no sense of humor, and talks about butts a lot? %s" % msg.author.name)
     db.append("I've heard that %s likes butts.. I can't lie, They don't much appeal to me" % msg.author.name)
     db.append("Have you heard the one about no cuts, no butts no coconuts? of course not... That's a few generations of evolution off for you lot.")
