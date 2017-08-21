@@ -1,10 +1,11 @@
 #!/usr/local/bmgraves-python/discord/bin/python
 import discord
 import asyncio
+import loadconf
 from libsupport import chatty
 
 client = discord.Client()
-token = "MzQ4MjEyNDI5ODU2OTY0NjEw.DHjpng.j6SN31kiCFTRkAG7eDExhGo94Ww"
+dev_mode = True
 
 @client.event
 async def on_ready():
@@ -36,4 +37,8 @@ async def on_message(message):
 
 
 # This is where the Actual login happens?
-client.run(token)
+if (dev_mode):
+    client.run(loadconf.__dev_token__)
+else:
+    client.run(loadconf.__token__)
+    
