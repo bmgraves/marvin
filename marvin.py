@@ -4,7 +4,7 @@ import loadconf
 from libsupport import chatty
 import os.path
 
-__version__ = ".01a"
+__version__ = ".10a"
 
 client = discord.Client()
 dev_mode = True
