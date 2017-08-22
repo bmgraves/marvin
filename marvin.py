@@ -34,7 +34,7 @@ async def on_message(message):
     msg = message.content
     if sane_response:
         current_msg = msg
-        await client.send_message(message.channel, "Dev Mode: %s" % current_msg)
+#        await client.send_message(message.channel, "Dev Mode: %s" % current_msg)
     boredom -= 2
     if sane_response and ("your face" in msg.lower()):
         jokes['face'] +=1
@@ -43,8 +43,7 @@ async def on_message(message):
         #stim += 1
     elif sane_response and ("butt" in msg.lower()):
         jokes['butt'] +=1
-        await client.send_message(message.channel, chatty.face_joke(message, jokes['face']))
-        await client.send_message(message.channel, chatty.butt_joke(message, jokes['face']))
+        await client.send_message(message.channel, chatty.butt_joke(message, jokes['butt']))
         boredom -= random.randint(5,20)
         #stim += 1
     elif sane_response and (client.user.mentioned_in(message)):
