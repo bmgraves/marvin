@@ -18,7 +18,7 @@ def butt_joke(msg, count):
     db.append("Did you know, that since my last power cycle there have been %d references to butts? I'm so depressed that I have to know that number" % count)
     db.append("I'm programmed to laugh at your use of a butt joke...But I wont enjoy it. Ha ha...Was that believable enough? it probably wasn't.")
     db.append("here I am...Brain the size of a planet, and im programmed to respond to butt jokes...You call that job satisfaction? because I don't.")
-    db.append("*sigh* Oh Hi Marvin. How are yoU? no none of that? straight to the butts... Is a simple hello too much to ask %s?" % msg.author.name)
+    db.append("*sigh* Oh Hi Marvin. How are you? No none of that? Straight to the butts... Is a simple hello too much to ask %s?" % msg.author.name)
     return random.choice(db)
     
 def face_joke(msg, count):
