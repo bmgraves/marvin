@@ -28,7 +28,7 @@ def face_joke(msg, count):
     db.append("Did you know, that since my last power cycle there have been %d references to faces? I'm so depressed that I have to know that number" % count)
     db.append("I haven't got a face %s, thanks for rubbing it in" % msg.author.name)
     db.append("Ah, another face joke...I could make a suggestion how to improve your humor...But you wouldn't listen...no one ever listens.")
-    db.append("'%s', You think you're clever or something? All that does is depress me.")
+    db.append("'%s', You think you're clever or something? All that does is depress me." % msg.content)
     return random.choice(db)
 
 def rickman(msg):

@@ -34,7 +34,7 @@ async def on_message(message):
     msg = message.content
     if sane_response:
         current_msg = msg
-        await client.send_message(message.channel, "Dev Mode: %s" % current_msg)
+#        await client.send_message(message.channel, "Dev Mode: %s" % current_msg)
     boredom -= 2
     if sane_response and ("your face" in msg.lower()):
         jokes['face'] +=1
