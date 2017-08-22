@@ -14,27 +14,37 @@ def get_help():
 
 def butt_joke(msg, count):
     db = []
-    db.append("")
-    db.append("Butts? A mind that can calculate PI to a trillion places, and I'm subjected to conversations about butts...How very stimulating.")
+    #db.append("")
+    db.append("I'm programmed to laugh at your use of a butt joke...But I wont enjoy it. Ha ha...Was that believable enough? it probably wasn't.")
+    db.append("here I am...Brain the size of a planet, and im programmed to respond to butt jokes...You call that job satisfaction? because I don't.")
     db.append("*sigh* Oh Hi Marvin. How are yoU? no none of that? straight to the butts... Is a simple hello too much to ask %s?" % msg.author.name)
-    db.append("I wasn't designed with a butt. Then again, I'm just an alpha model. The beta models go around sitting on things, not me though. No butt for poor Marvin to sit on.")
- #   db.append("Did you know %s, that I get so bored that I have started counting the number of times that a butt joke is made since my last sleep cycle? there have been %d so far. The sad part is it's not even enough to give me a challenge." % (msg.author.name, count))
-    #db.append("")
-    #db.append("")
-    # Old Jokes
-    db.append("What has one mouth, no sense of humor, and talks about butts a lot? %s" % msg.author.name)
-    db.append("I've heard that %s likes butts.. I can't lie, They don't much appeal to me" % msg.author.name)
-    db.append("Have you heard the one about no cuts, no butts no coconuts? of course not... That's a few generations of evolution off for you lot.")
-    db.append("Whats the difference between %s and a butt? I know a few grad students who are writing a thesis on it, but they haven't found an answer yet" % msg.author.name)
     return random.choice(db)
     
 def face_joke(msg):
     db = []
-    #db.append()
-    db.append("Really %s, a 'your face' joke? Are you a bloody moron or something?" % msg.author.name)
-    db.append(" oh '%s', You think you're clever or something?" % msg.content)
-    db.append("'%s', Yes...that will teach them...Well done...Very brilliant... How high is your IQ? 7?(thats 1 more than 6...In case you were wondering)" % msg.content)
-    db.append("I don't blame you for the face jokes. If i had a face like yours, I'd mock others faces too, %s" % msg.author.name)
+    #db.append("")
+    db.append("Ah, another face joke...I could make a suggestion how to improve your humor...But you wouldn't listen...no one ever listens.")
+    db.append("'%s', You think you're clever or something? All that does is depress me.")
+    return random.choice(db)
+
+def rickman(msg):
+    db = []
+    #"",
+    youtube = [
+    "https://www.youtube.com/watch?v=hDCfI-lKl4E",
+    "https://www.youtube.com/watch?v=eob7V_WtAVg",
+    "https://www.youtube.com/watch?v=EIQ6c78bhXg",
+    "https://www.youtube.com/watch?v=fDJq0bNJbQA",
+    #"",
+
+    ]
+    db.append("You ever hear of Alan Rickman? I've heard he's quite tallented. I wish I had met him... %s" % random.choice(youtube))
+    db.append("How about a video with Alan Rickman. Wish they could have gotten him to do my voice, would have made me more cheerful: %s" % random.choice(youtube))
+    #db.append("" % random.choice(youtube))
+    #db.append("" % random.choice(youtube))
+    #db.append("" % random.choice(youtube))
+    #db.append("" % random.choice(youtube))
+    #db.append("" % random.choice(youtube))
     return random.choice(db)
 
 def test_joke(msg):

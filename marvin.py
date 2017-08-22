@@ -1,14 +1,18 @@
-#!/usr/local/bmgraves-python/discord/bin/python
 import discord
 import asyncio
 import loadconf
 from libsupport import chatty
+import os.path
+
+__version__ = ".01a"
 
 client = discord.Client()
 dev_mode = True
 
+
 @client.event
 async def on_ready():
+    print('Marvin: %s' % __version__)
     print('Logged in as')
     print(client.user.name)
     print(client.user.id)
@@ -30,12 +34,15 @@ async def on_message(message):
         await client.send_message(message.channel, chatty.test_joke(message))
     elif sane_response and (msg.startswith("?help")):
         await client.send_message(message.channel, chatty.get_help())
-    elif sane_response and (msg.startswith("?admintest")):
-        await client.send_message(message.channel, chatty.get_help())
+    elif sane_response and (msg.startswith("?rickman")):
+        await client.send_message(message.channel, chatty.rickman(message))
 
 
 
 
+
+print('------------')
+# End Setup
 # This is where the Actual login happens?
 if (dev_mode):
     client.run(loadconf.__dev_token__)
