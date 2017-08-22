@@ -89,9 +89,8 @@ def mention(msg, boredom):
     "How depressing. Nothing better to do with my time then interact with a glorified monkey.",
     "What is it that you want %s? You must be desperate if you're talking to me about it" % msg.author.name,
     ]
-    if ("life" in msg.contents):
+    if ("life" in msg.content):
         return "life? Don't talk to me about life"
-        
     else:
         return random.choice(db)
     
