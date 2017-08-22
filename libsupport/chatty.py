@@ -84,7 +84,7 @@ def chat_logic(perc):
         return False
 
 def mention(msg, boredom):
-    canned = [
+    db = [
     "Are you talking to me? I don't believe it. Nobody ever talks to me",
     "How depressing. Nothing better to do with my time then interact with a glorified monkey.",
     "What is it that you want %s? You must be desperate if you're talking to me about it" % msg.author.name,
@@ -94,9 +94,7 @@ def mention(msg, boredom):
     else:
         return random.choice(db)
     
-    
 
-    return "Are you talking to me? I don't believe it. Nobody every talks to me"
 
 
 
