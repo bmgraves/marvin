@@ -75,7 +75,7 @@ async def random_chat(channel_in):
 
 
         # this determines a basic floor that will leave the bot functional even in high chat environments
-        floor = 10
+        floor = 5
         if boredom < floor:
             boredom = floor
 
@@ -85,8 +85,8 @@ async def random_chat(channel_in):
 
         #dev check
         #await client.send_message(channel, "Dev Mode: boredom: %d" % boredom)
-        boredom += random.randint(10,20)
-        await asyncio.sleep(random.randint(900,2700))
+        boredom += random.randint(8,15)
+        await asyncio.sleep(random.randint(1000,3000))
 
         # this was an old path for the chat logic, I've turned bordom into a positive rising integer that increases percentile
         #if (chatty.chat_logic(60) and (stim == 0)):
