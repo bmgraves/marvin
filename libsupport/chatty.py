@@ -51,7 +51,7 @@ def rickman(msg):
 
     db.append("You ever hear of Alan Rickman? I've heard he's quite tallented. I wish I had met him... %s" % random.choice(youtube_rickman))
     db.append("How about a video with Alan Rickman. Wish they could have gotten him to do my voice, would have made me more cheerful: %s" % random.choice(youtube_rickman))
-    db.append("Here is a video of me trying to be happy..." % random.choice(youtube_marvin))
+    db.append("Here is a video of me trying to be happy... %s" % random.choice(youtube_marvin))
     #db.append("" % random.choice(youtube))
     #db.append("" % random.choice(youtube))
     #db.append("" % random.choice(youtube))
