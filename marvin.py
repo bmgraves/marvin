@@ -7,7 +7,7 @@ import os.path
 __version__ = ".11a"
 
 client = discord.Client()
-dev_mode = True
+dev_mode = False
 # Stim is a regulating variable. The lower it is, the more often Marvin will add to the chatdd
 #stim = 0
 #boredom is a replacement for stimulation, Designed to simplify the logic behind random chats.
