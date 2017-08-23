@@ -34,18 +34,24 @@ def face_joke(msg, count):
 def rickman(msg):
     db = []
     #"",
-    youtube = [
+    youtube_rickman = [
     "https://www.youtube.com/watch?v=hDCfI-lKl4E",
     "https://www.youtube.com/watch?v=eob7V_WtAVg",
     "https://www.youtube.com/watch?v=EIQ6c78bhXg",
     "https://www.youtube.com/watch?v=fDJq0bNJbQA",
     "https://www.youtube.com/watch?v=xgxwLQsM0iM",
     #"",
-
     ]
-    db.append("You ever hear of Alan Rickman? I've heard he's quite tallented. I wish I had met him... %s" % random.choice(youtube))
-    db.append("How about a video with Alan Rickman. Wish they could have gotten him to do my voice, would have made me more cheerful: %s" % random.choice(youtube))
-    #db.append("" % random.choice(youtube))
+    youtube_marvin = [
+    "https://www.youtube.com/watch?v=CAA67a2-Klk",
+    "https://www.youtube.com/watch?v=lH7XCghlH7M",
+    "https://www.youtube.com/watch?v=q4P3pvKmbsg",
+    #"",
+    ]
+
+    db.append("You ever hear of Alan Rickman? I've heard he's quite tallented. I wish I had met him... %s" % random.choice(youtube_rickman))
+    db.append("How about a video with Alan Rickman. Wish they could have gotten him to do my voice, would have made me more cheerful: %s" % random.choice(youtube_rickman))
+    db.append("Here is a video of me trying to be happy..." % random.choice(youtube_marvin))
     #db.append("" % random.choice(youtube))
     #db.append("" % random.choice(youtube))
     #db.append("" % random.choice(youtube))
