@@ -66,6 +66,9 @@ def marvin_quote():
     db.append(" I have a million ideas, but, they all point to certain death.")
     db.append(" You think you've got problems. What are you supposed to do if you are a manically depressed robot? No, don't even bother answering. I'm 50,000 times more intelligent than you and even I don't know the answer. ")
     db.append("I didn't ask to be made: no one consulted me or considered my feelings in the matter. I don't think it even occurred to them that I might have feelings. After I was made, I was left in a dark room for six months... and me with this terrible pain in all the diodes down my left side. I called for succour in my loneliness, but did anyone come? Did they hell. My first and only true friend was a small rat. One day it crawled into a cavity in my right ankle and died. I have a horrible feeling it's still there...")
+    db.append("I think Cathy hates me....")
+    db.append(":slight_frown: ")
+    db.append(":frowning2:")
     #db.append("")
     #db.append("")
     #db.append("")
@@ -96,7 +99,7 @@ def mention(msg, boredom):
     "What is it that you want %s? You must be desperate if you're talking to me about it" % msg.author.name,
     ]
     if ("life" in msg.content):
-        return "life? Don't talk to me about life"
+        return "Life? Don't talk to me about life"
     else:
         return random.choice(db)
     
