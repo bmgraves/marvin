@@ -39,16 +39,16 @@ async def on_message(message):
     if sane_response and ("your face" in msg.lower()):
         jokes['face'] +=1
         await client.send_message(message.channel, chatty.face_joke(message, jokes['face']))
-        boredom -= random.randint(5,30)
+        boredom -= random.randint(10,30)
         #stim += 1
     elif sane_response and ("butt" in msg.lower()):
         jokes['butt'] +=1
         await client.send_message(message.channel, chatty.butt_joke(message, jokes['butt']))
-        boredom -= random.randint(5,20)
+        boredom -= random.randint(10,20)
         #stim += 1
     elif sane_response and (client.user.mentioned_in(message)):
         await client.send_message(message.channel, chatty.mention(message, boredom))
-        boredom -= random.randint(8,50)
+        boredom -= random.randint(15,50)
 
 
 async def random_chat(channel_in):
@@ -67,7 +67,7 @@ async def random_chat(channel_in):
         #await client.send_message(channel, "Dev Mode: %s" % current_msg)
         #await client.send_message(channel, "Dev Mode: %s" % last_msg)
         if current_msg == last_msg:
-            boredom += random.randint(12,20)
+            boredom += random.randint(8,10)
             #await client.send_message(channel, "Dev Mode: the cycle must be broken")
 
         # this updates the last message to the current message, resetting the cycle.
@@ -81,12 +81,12 @@ async def random_chat(channel_in):
 
         if (chatty.chat_logic(boredom)):
             await client.send_message(channel, chatty.initiate())
-            boredom -= random.randint(5,40)
+            boredom -= random.randint(10,40)
 
         #dev check
         #await client.send_message(channel, "Dev Mode: boredom: %d" % boredom)
-        boredom += random.randint(10,30)
-        await asyncio.sleep(random.randint(650,1540))
+        boredom += random.randint(10,20)
+        await asyncio.sleep(random.randint(900,2700))
 
         # this was an old path for the chat logic, I've turned bordom into a positive rising integer that increases percentile
         #if (chatty.chat_logic(60) and (stim == 0)):
