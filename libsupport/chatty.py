@@ -70,7 +70,7 @@ def marvin_quote():
     db.append(":slight_frown:")
     db.append(":frowning2:")
     db.append("It's depressing watching all of you... James most of all...")
-    #db.append("")
+    db.append("<:hamsad:349944315017166860>")
     #db.append("")
     return random.choice(db)
     
@@ -97,7 +97,7 @@ def mention(msg, boredom):
     "Are you talking to me? I don't believe it. Nobody ever talks to me",
     "How depressing. Nothing better to do with my time then interact with a glorified monkey.",
     "What is it that you want %s? You must be desperate if you're talking to me about it" % msg.author.name,
-    "Are you talking to me %s? Does this mean I have a friend? <:vaultcomp:349942729532375050>" % msg.author.name,
+    "Are you talking to me %s? Does this mean I have a friend? <:vaultcomp:349944315398717440>" % msg.author.name,
     ]
     if ("life" in msg.content):
         return "Life? Don't talk to me about life"
